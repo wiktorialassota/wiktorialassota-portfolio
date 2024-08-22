@@ -1,0 +1,42 @@
+$primary-color:#283747;
+$secondary-color:#3498db; 
+$background-color: white;
+$font-style:'Arial';         
+
+body {
+    font-family: $font-style;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: $primary-color;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    color: $primary-color;
+}
+@media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.25rem;
+    }
+  
+    h2 {
+      font-size: 1rem;
+    }
+  }
+@import 'header';
+@import 'portfolios';
+@import '_about';
+@import '_skills';
+@import '_footer';
+@import '_contact';
